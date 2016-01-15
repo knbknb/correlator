@@ -3,8 +3,7 @@ correlator
 
 Stratigraphic Correlation Tool
 
-Correlator is a standalone package used for stratigraphic correlation and producing standard
-depth map tables that can be uploaded into USIO laboratory information management system (LIMS).
+Correlator is a standalone package for Windows and MacOS Computers. It can be used for stratigraphic correlation and producing standard depth map tables that can be uploaded into USIO laboratory information management system (LIMS).
 The application facilitates the adjustment of core depth data drilled in a multi-hole scenario
 by correlating measured whole-core (GRA, MSLP, PWC,NGR) or half-core (RSC) sensor data across
 holes using an optimized cross-correlation approach.
