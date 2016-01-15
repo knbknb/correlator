@@ -16,3 +16,4 @@ splice (in meters composite depth, or mcd), and equivalent log depth (ELD) table
 export are facilitated with a downloader program that provides standard format data and
 uploaders that then transfer depth tables back to LIMS for access when using data queries.
 
+Correlator can be run on  Windows and MacOS operating systems.
