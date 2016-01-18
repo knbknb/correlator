@@ -2830,7 +2830,8 @@ class FilterPanel():
 		self.plotcmd.SetForegroundColour(wx.BLACK)
 		if platform_name[0] == "Windows" :			
 			#grid2.Add(self.plotcmd, 0, wx.RIGHT, 10)
-			grid2.Add(self.plotcmd, (2,1), wx.RIGHT, 10)
+			
+			grid2.Add(self.plotcmd, (2,1), flag=wx.RIGHT, border=5)
 		else :
 			grid2.Add(self.plotcmd, (2,1), span=(1,2))
 
