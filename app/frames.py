@@ -301,7 +301,7 @@ class BetterLegendPlotCanvas(plot.PlotCanvas):
 				# draw marker with legend
 				pnt= (trhc[0]+legendLHS+legendSymExt[0]/2., trhc[1]+s+lineHeight/2.)
 				# knbknb disabled  20160118
-				#o.draw(dc, self.printerScale, coord=_Numeric.array([pnt]))
+				o.draw(dc, self.printerScale, coord=_Numeric.array([pnt]))
 			elif isinstance(o,plot.PolyLine):
 				# draw line with legend
 				pnt1= (trhc[0]+legendLHS, trhc[1]+s+lineHeight/2.)
@@ -2821,7 +2821,9 @@ class FilterPanel():
 		grid2.Add(self.unitscmd, (1,2), flag=wx.ALIGN_CENTER_VERTICAL)
 
 		if platform_name[0] == "Windows" :	
-			grid2.Add(wx.StaticText(panel2, -1, "Display	         "), 0, wx.RIGHT | wx.LEFT, 5)
+			# knbknb 20160118
+			#grid2.Add(wx.StaticText(panel2, -1, "Display	         "), 0, wx.RIGHT | wx.LEFT, 5)
+			grid2.Add(wx.StaticText(panel2, -1, "Display	         "), (2,0), flag=wx.RIGHT, border=5)
 		else :
 			grid2.Add(wx.StaticText(panel2, -1, "Display"), (2,0), flag=wx.RIGHT, border=5)
 		self.plotcmd = wx.Choice(panel2, -1, (0,0), (180, -1), ("UnsmoothedOnly", "SmoothedOnly", "Smoothed&Unsmoothed"))
